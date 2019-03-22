@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picture Database"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="75dp"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="208dp"
+        android:layout_height="226dp"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="154dp"
+        tools:srcCompat="@tools:sample/avatars[12]" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="40sp"
+            android:onClick="captureImg"
+            android:text="Capture  Image"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+    <EditText
+        android:id="@+id/IDnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="477dp"
+        android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="60sp"
+            android:onClick="getImg"
+            android:text="Get Image"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="538dp" />
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
